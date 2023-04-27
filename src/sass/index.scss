@@ -1,2 +1,12 @@
-@import './common';
-@import './example';
+@import './utils/breakpoints';
+@import './utils/variables';
+@import './utils/common';
+
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/cases';
+@import './components/blog';
+@import './components/contact';
+@import './components/callback';
+@import './components/footer';

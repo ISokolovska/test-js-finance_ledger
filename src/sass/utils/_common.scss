@@ -1,0 +1,222 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', 'sans-serif';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--textColorBlack);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('/src/images/header/1mobxheader.jpg');
+  border-radius: 0px;
+  @media screen and (min-width: 768.98px) {
+    // height: 400px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/src/images/header/1tabxheader.jpg');
+  }
+  @media screen and (min-width: 1360px) {
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    // height: 600px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/src/images/header/1deskheader.jpg');
+  }
+}
+
+@media screen and (max-width: 480.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    body {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/src/images/header/2mobxheader.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 480.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    body {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/src/images/header/2mobxheader.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 768.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    body {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/src/images/header/2tabxheader.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    body {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/src/images/header/2deskheader.jpg');
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 320px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: '16px 32px';
+  }
+}
+@media screen and (min-width: 1360px) {
+  .container {
+    width: 1360px;
+    padding: '32px 30px';
+  }
+}
+
+button,
+input {
+  background-color: inherit;
+}
+
+button.is-hidden {
+  display: none;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--textColorWhite);
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  a {
+    font-size: 18px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--textColorWhite);
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 55px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--textColorWhite);
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--textColorWhite);
+}
+
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}

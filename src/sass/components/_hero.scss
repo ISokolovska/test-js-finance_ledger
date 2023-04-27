@@ -1,0 +1,47 @@
+.hero__text {
+  font-size: 26px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--textColorWhite);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__text {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .hero__text {
+    line-height: 1.4;
+  }
+}
+
+.hero__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 16px 32px;
+  gap: 10px;
+  width: 175px;
+  height: 57px;
+  background: var(--accentColorGreen);
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--textColorWhite);
+}
+
+.hero__button span {
+  display: flex;
+  align-items: center;
+}
+
+.hero__button span::before {
+  content: url('/src/images/gallery/arrow_right.png');
+  width: 9px;
+  height: 18px;
+  margin-right: 9px;
+}

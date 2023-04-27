@@ -1,0 +1,88 @@
+.about {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: flex-start;
+  // padding-left: 20px;
+  // padding-right: 20px;
+}
+
+.about__image {
+  background-image: url('/src/images/home/1mobxpeople.jpg');
+  border-radius: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 220px;
+
+  @media screen and (min-width: 768.98px) {
+    height: 589px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/src/images/home/1tabxpeople.jpg');
+  }
+
+  @media screen and (min-width: 1360px) {
+    height: 460px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url('/src/images/home/1deskxpeople.jpg');
+  }
+}
+
+@media screen and (max-width: 480.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .about__image {
+      background: url('/src/images/header/2mobxheader.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 480.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .about__image {
+      background: url('/src/images/home/2mobxpeople.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 768.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .about__image {
+      background: url('/src/images/home/2tabxpeople.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .header {
+      background: url('/src/images/home/2deskxpeople.jpg');
+    }
+  }
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--accentColorGreen);
+}

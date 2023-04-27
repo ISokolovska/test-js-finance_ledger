@@ -1,21 +1,21 @@
 {
-  "name": "parcel-project-template",
-  "version": "2.0.0",
+  "name": "test-js-finance_ledger",
+  "version": "0.1.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://ISokolovska.github.io/test-js-finance_ledger",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /test-js-finance_ledger/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/ISokolovska/test-js-finance_ledger.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Iuliia Sokolovska <uu.sokil@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/ISokolovska/test-js-finance_ledger/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
