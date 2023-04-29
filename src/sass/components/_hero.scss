@@ -1,17 +1,18 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hero__text {
+  margin-top: 16px;
   font-size: 26px;
   line-height: 1.2;
   text-align: center;
   color: var(--textColorWhite);
-}
-
-@media screen and (min-width: 768px) {
-  .hero__text {
+  @media screen and (min-width: 768px) {
     font-size: 40px;
   }
-}
-@media screen and (min-width: 1360px) {
-  .hero__text {
+  @media screen and (min-width: 1360px) {
     line-height: 1.4;
   }
 }
@@ -21,13 +22,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: auto;
   padding: 16px 32px;
+  margin-top: 24px;
   gap: 10px;
   width: 175px;
   height: 57px;
   background: var(--accentColorGreen);
   border-radius: 5px;
+  border: 1px solid var(--accentColorGreen);
   font-size: 18px;
   line-height: 1.4;
   text-align: center;

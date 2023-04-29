@@ -1,7 +1,35 @@
 <section>
   <div class="about">
-    <div class="about__image"></div>
-    <div class="about__wrapper">
+    <div>
+      <picture>
+        <source
+          srcset="
+            ./images/home/1deskxpeople.jpg 1x,
+            ./images/home/2deskxpeople.jpg 1x
+          "
+          media="(min-width:1360px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/home/1tabxpeople.jpg 1x,
+            ./images/home/2tabxpeople.jpg 2x
+          "
+          media="(min-width:768px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/home/1mobxpeople.jpg 1x,
+            ./images/home/2mobxpeople.jpg 2x
+          "
+          media="(min-width:480px)"
+          type="image/jpeg"
+        />
+        <img src="./images/home/1mobxpeople.jpg" alt="Many people" />
+      </picture>
+    </div>
+    <div class="about__wrapper container">
       <h3>What you are looking for</h3>
       <h2>We provide bespoke solutions</h2>
       <p>

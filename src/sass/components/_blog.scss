@@ -1,0 +1,35 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.blog__wrapper {
+  background-color: var(--accentColorBlue);
+}
+
+.blog__wrapper p {
+  margin-top: 24px;
+  color: var(--textColorWhite);
+}
+
+.blog__wrapper button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  margin-top: 24px;
+  gap: 10px;
+  width: 172px;
+  height: 54px;
+  border: 1px solid var(--textColorWhite);
+  border-radius: 5px;
+  color: var(--textColorWhite);
+
+  @media screen and (min-width: 768px) {
+    width: 186px;
+    height: 57px;
+  }
+}

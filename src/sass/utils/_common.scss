@@ -20,6 +20,8 @@ body {
   border-radius: 0px;
   @media screen and (min-width: 768.98px) {
     // height: 400px;
+    font-size: 18px;
+    line-height: 1.4;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('/src/images/header/1tabxheader.jpg');
   }
@@ -94,20 +96,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-}
-@media screen and (min-width: 480px) {
-  .container {
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
-}
-@media screen and (min-width: 768px) {
-  .container {
+  @media screen and (min-width: 768px) {
     width: 768px;
     padding: '16px 32px';
   }
-}
-@media screen and (min-width: 1360px) {
-  .container {
+  @media screen and (min-width: 1360px) {
     width: 1360px;
     padding: '32px 30px';
   }
@@ -116,6 +112,11 @@ body {
 button,
 input {
   background-color: inherit;
+  font-size: 16px;
+  line-height: 1.4;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 button.is-hidden {
@@ -166,43 +167,35 @@ a {
   line-height: 1.4;
   color: var(--textColorWhite);
   text-decoration: none;
-}
-@media screen and (min-width: 768px) {
-  a {
+  @media screen and (min-width: 768px) {
     font-size: 18px;
   }
 }
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 h1 {
   font-weight: 600;
   font-size: 40px;
   line-height: 1.4;
-  text-align: center;
   color: var(--textColorWhite);
-}
-
-@media screen and (min-width: 768px) {
-  h1 {
+  @media screen and (min-width: 768px) {
     font-size: 55px;
   }
 }
 
 h2 {
+  margin-top: 16px;
   font-size: 32px;
   line-height: 1.4;
-  text-align: center;
   color: var(--textColorWhite);
-}
-
-@media screen and (min-width: 768px) {
-  h2 {
+  @media screen and (min-width: 768px) {
     font-size: 40px;
+    line-height: 1.35;
+  }
+  @media screen and (min-width: 768px) {
     line-height: 1.2;
   }
 }
@@ -210,13 +203,32 @@ h2 {
 h3 {
   font-size: 16px;
   line-height: 1.4;
-  text-align: center;
   color: var(--textColorWhite);
-}
-
-@media screen and (min-width: 768px) {
-  h3 {
+  @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: 1.2;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1360px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
