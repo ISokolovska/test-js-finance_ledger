@@ -1,12 +1,105 @@
 .blog {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.blog__image {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.blog__image #blog {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.blog__image #blog .inner {
+  padding-top: 63.35%; /* height/width of image */
+  display: block;
+  height: 0;
+}
+
+.blog__image #blog {
+  background-image: url('/src/images/blog/1mobxblog.jpg');
+}
+
+@media screen and (min-width: 768.98px) {
+  .blog__image #blog {
+    background-image: url('/src/images/blog/1tabxblog.jpg');
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .blog__image #blog {
+    background-image: url('/src/images/blog/1deskxblog.jpg');
+  }
+}
+
+@media screen and (max-width: 480.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .blog__image #blog {
+      background-image: url('/src/images/blog/2mobxblog.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 480.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .blog__image #blog {
+      background-image: url('/src/images/blog/2mobxblog.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .blog__image #blog {
+      background-image: url('/src/images/blog/2tabxblog.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .blog__image #blog {
+      background-image: url('/src/images/blog/2deskxblog.jpg');
+    }
+  }
 }
 
 .blog__wrapper {
   background-color: var(--accentColorBlue);
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
 }
 
 .blog__wrapper p {

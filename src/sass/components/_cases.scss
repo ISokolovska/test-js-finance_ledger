@@ -11,6 +11,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.cases__wrapper h2,
+.cases__wrapper h3 {
+  color: var(--textColorBlack);
 }
 
 .cases__wrapper p {
@@ -21,6 +27,7 @@
 
 .cases__list {
   width: 100%;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;

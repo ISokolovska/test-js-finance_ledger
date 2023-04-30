@@ -1,0 +1,174 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.form__image {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.form__image #form {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.form__image #form .inner {
+  padding-top: 63.35%; /* height/width of image */
+  // padding-top: 394px;
+  display: block;
+  height: 0;
+}
+
+.form__image #form {
+  background-image: url('/src/images/form/1mobxrequest.jpg');
+}
+
+@media screen and (min-width: 768.98px) {
+  .form__image #form {
+    background-image: url('/src/images/form/1tabxrequest.jpg');
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .form__image #form {
+    background-image: url('/src/images/form/1deskxrequest.jpg');
+  }
+}
+
+@media screen and (max-width: 480.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .form__image #form {
+      background-image: url('/src/images/form/2mobxrequest.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 480.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .form__image #form {
+      background-image: url('/src/images/form/2mobxrequest.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .form__image #form {
+      background-image: url('/src/images/form/2tabxrequest.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .form__image #form {
+      background-image: url('/src/images/form/2deskxrequest.jpg');
+    }
+  }
+}
+
+.form__wrapper {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--bgForm);
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    padding: 32px;
+  }
+  @media screen and (min-width: 1360px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.form__wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 70px;
+  color: var(--textColorBlack);
+}
+
+.form__request {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: flex-start;
+  //   align-items: center;
+}
+
+.form__request input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 8px;
+  gap: 10px;
+  width: 100%;
+  height: 56px;
+  background: var(--textColorWhite);
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #808080;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.form__request label:not(:last-child) {
+  margin-bottom: 16px;
+  @media screen and (min-width: 1360px) {
+    font-size: 25px;
+  }
+}
+
+.form__request button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 56px;
+  margin-top: 24px;
+  gap: 10px;
+  width: 155px;
+  height: 57px;
+  background: var(--accentColorGreen);
+  border: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--textColorWhite);
+  @media screen and (min-width: 1360px) {
+    margin-top: 40px;
+  }
+}

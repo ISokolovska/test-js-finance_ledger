@@ -1,43 +1,98 @@
 <section>
-  <div>
-    <div>
-      <h3 style="color: #333333">Who we are</h3>
-      <h2 id="contact" style="color: #333333">Our Professional Team</h2>
+  <div class="team container">
+    <div class="team__wrapper">
+      <h3>Who we are</h3>
+      <h2 id="contact">Our Professional Team</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         sapiente!
       </p>
     </div>
     <div>
-      <ul>
-        <li>
-          <img
-            src="./images/team/person1.jpg"
-            alt="John Doe"
-            width="280"
-            height="186"
-          />
-          <p>John Doe</p>
+      <ul class="team__list">
+        <li class="team__item">
+          <picture>
+            <source
+              srcset="
+                ./images/team/1deskxteam1.jpg 1x,
+                ./images/team/2deskxteam1.jpg 1x
+              "
+              media="(min-width:1360px)"
+              type="image/jpeg" />
+            <source
+              srcset="
+                ./images/team/1tabxteam1.jpg 1x,
+                ./images/team/2tabxteam1.jpg 2x
+              "
+              media="(min-width:768px)"
+              type="image/jpeg" />
+            <source
+              srcset="
+                ./images/team/1mobxteam1.jpg 1x,
+                ./images/team/2mobxteam1.jpg 2x
+              "
+              media="(min-width:480px)"
+              type="image/jpeg" />
+            <img src="./images/team/1mobxteam1.jpg" alt="John Doe"
+          /></picture>
+          <h4>John Doe</h4>
           <p>President</p>
         </li>
-        <li>
-          <img
-            src="./images/team/person2.jpg"
-            alt="Jane Doe"
-            width="280"
-            height="176"
-          />
-          <p>Jane Doe</p>
+        <li class="team__item">
+          <picture>
+            <source
+              srcset="
+                ./images/team/1deskxteam2.jpg 1x,
+                ./images/team/2deskxteam2.jpg 1x
+              "
+              media="(min-width:1360px)"
+              type="image/jpeg" />
+            <source
+              srcset="
+                ./images/team/1tabxteam2.jpg 1x,
+                ./images/team/2tabxteam2.jpg 2x
+              "
+              media="(min-width:768px)"
+              type="image/jpeg" />
+            <source
+              srcset="
+                ./images/team/1mobxteam2.jpg 1x,
+                ./images/team/2mobxteam2.jpg 2x
+              "
+              media="(min-width:480px)"
+              type="image/jpeg" />
+            <img src="./images/team/1mobxteam2.jpg" alt="Jane Doe"
+          /></picture>
+
+          <h4>Jane Doe</h4>
           <p>Vice President</p>
         </li>
-        <li>
-          <img
-            src="./images/team/person3.jpg"
-            alt="Steve Smith"
-            width="280"
-            height="176"
-          />
-          <p>Steve Smith</p>
+        <li class="team__item">
+          <picture>
+            <source
+              srcset="
+                ./images/team/1deskxteam3.jpg 1x,
+                ./images/team/2deskxteam3.jpg 1x
+              "
+              media="(min-width:1360px)"
+              type="image/jpeg" />
+            <source
+              srcset="
+                ./images/team/1tabxteam3.jpg 1x,
+                ./images/team/2tabxteam3.jpg 2x
+              "
+              media="(min-width:768px)"
+              type="image/jpeg" />
+            <source
+              srcset="
+                ./images/team/1mobxteam3.jpg 1x,
+                ./images/team/2mobxteam3.jpg 2x
+              "
+              media="(min-width:480px)"
+              type="image/jpeg" />
+            <img src="./images/team/1mobxteam3.jpg" alt="Steve Smith"
+          /></picture>
+          <h4>Steve Smith</h4>
           <p>Marketing Head</p>
         </li>
       </ul>
