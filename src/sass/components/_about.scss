@@ -1,7 +1,6 @@
 .about {
   display: flex;
   flex-direction: column;
-
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
@@ -28,6 +27,13 @@
   padding-top: 63.35%; /* height/width of image */
   display: block;
   height: 0;
+  @media screen and (min-width: 768px) {
+    // padding-top: 100vh;
+    padding-top: 63.35%;
+  }
+  @media screen and (min-width: 1360px) {
+    padding-top: 63.35%;
+  }
 }
 
 .about__image #people {
@@ -96,12 +102,10 @@
 
 .about__wrapper {
   width: 100%;
-
   margin: 0;
   background-color: var(--accentColorGreen);
   @media screen and (min-width: 768px) {
     width: 50%;
-    height: auto;
   }
 }
 
