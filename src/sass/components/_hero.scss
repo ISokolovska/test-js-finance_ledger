@@ -1,7 +1,14 @@
-.hero {
+.container.hero {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 416px;
+  @media screen and (min-width: 768px) {
+    height: 935px;
+  }
+  @media screen and (min-width: 1360px) {
+    height: 679px;
+  }
 }
 .hero__text {
   margin-top: 16px;
@@ -34,6 +41,12 @@
   line-height: 1.4;
   text-align: center;
   color: var(--textColorWhite);
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--lightGreen);
+  }
 }
 
 .hero__button span {

@@ -1,9 +1,12 @@
-.cases.container {
+.section.cases {
+  background-color: var(--textColorWhite);
+}
+.container.cases {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--textColorWhite);
+  // background-color: var(--textColorWhite);
 }
 
 .cases__wrapper {
