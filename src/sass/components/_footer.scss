@@ -19,7 +19,7 @@
   font-size: 16px;
   line-height: 1.4;
   color: var(--textColorWhite);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     font-size: 18px;
   }
 }

@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // background-color: var(--textColorWhite);
 }
 
 .cases__wrapper {
@@ -31,7 +30,7 @@
 .cases__list {
   width: 100%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     display: flex;
     flex-wrap: wrap;
     gap: 17px;
@@ -40,12 +39,12 @@
 
 .cases__item {
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     flex-basis: calc((100% - 34px) / 3);
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $tab) {
   .cases__item:not(:last-child) {
     margin-bottom: 8px;
   }

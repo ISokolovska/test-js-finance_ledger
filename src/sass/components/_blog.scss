@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 0;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     flex-direction: row-reverse;
   }
 }
@@ -15,14 +15,14 @@
   background-image: url('/src/images/blog/1mobxblog.jpg');
 }
 
-@media screen and (min-width: 479.98px) {
+@media screen and (min-width: $mob2) {
   .form__image {
     height: calc(100vw / (320px / 247px));
     background-image: url('/src/images/blog/1mobxblog.jpg');
   }
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: $tab) {
   .blog__image {
     width: 50%;
     height: 493px;
@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: $desk) {
   .blog__image {
     width: 50%;
     height: 460px;
@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (max-width: 479.98px) {
+@media screen and (max-width: $mob2) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (min-width: 479.98px) {
+@media screen and (min-width: $mob2) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: $tab) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: $desk) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -89,11 +89,11 @@
 
 .blog__wrapper {
   background-color: var(--accentColorBlue);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     width: 50%;
     height: 493px;
   }
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: $desk) {
     width: 50%;
     height: 460px;
   }
@@ -126,7 +126,7 @@
     color: var(--accentColorBlue);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     width: 186px;
     height: 57px;
   }

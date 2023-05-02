@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 416px;
-  @media screen and (min-width: 768px) {
-    height: 935px;
+  height: 413px;
+  @media screen and (min-width: $tab) {
+    height: 954px;
   }
-  @media screen and (min-width: 1360px) {
-    height: 679px;
+  @media screen and (min-width: $desk) {
+    height: 698px;
   }
 }
 .hero__text {
@@ -16,10 +16,10 @@
   line-height: 1.2;
   text-align: center;
   color: var(--textColorWhite);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     font-size: 40px;
   }
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: $desk) {
     line-height: 1.4;
   }
 }

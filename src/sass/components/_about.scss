@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     flex-direction: row;
   }
 }
@@ -14,14 +14,14 @@
   background-image: url('/src/images/about/1mobxpeople.jpg');
 }
 
-@media screen and (min-width: 479.98px) {
+@media screen and (min-width: $mob2) {
   .about__image {
     height: calc(100vw / (320px / 220px));
     background-image: url('/src/images/about/1mobxpeople.jpg');
   }
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: $tab) {
   .about__image {
     width: 50%;
     height: 589px;
@@ -29,7 +29,7 @@
   }
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: $desk) {
   .about__image {
     width: 50%;
     height: 460px;
@@ -38,7 +38,7 @@
   }
 }
 
-@media screen and (max-width: 479.98px) {
+@media screen and (max-width: $mob2) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (min-width: 479.98px) {
+@media screen and (min-width: $mob2) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: $tab) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -74,7 +74,7 @@
   }
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: $desk) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -86,13 +86,16 @@
   }
 }
 
+// .section.about {
+//   background-color: var(--accentColorGreen);
+// }
 .container.about__wrapper {
   background-color: var(--accentColorGreen);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     width: 50%;
     height: 589px;
   }
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: $desk) {
     width: 50%;
     height: 460px;
   }
@@ -125,7 +128,7 @@
     color: var(--accentColorGreen);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     width: 156px;
     height: 57px;
   }

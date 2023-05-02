@@ -1,7 +1,14 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 html {
+  box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+*,
+*::after,
+::before {
+  box-sizing: inherit;
 }
 
 body {
@@ -19,19 +26,19 @@ body {
     ),
     url('/src/images/header/1mobxheader.jpg');
   border-radius: 0px;
-  @media screen and (min-width: 768.98px) {
+  @media screen and (min-width: $tab) {
     font-size: 18px;
     line-height: 1.4;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('/src/images/header/1tabxheader.jpg');
   }
-  @media screen and (min-width: 1360px) {
+  @media screen and (min-width: $desk) {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('/src/images/header/1deskheader.jpg');
   }
 }
 
-@media screen and (max-width: 480.98px) {
+@media screen and (max-width: $mob2) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -44,7 +51,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480.98px) {
+@media screen and (min-width: $mob2) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -57,7 +64,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768.98px) {
+@media screen and (min-width: $tab) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -70,7 +77,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: $desk) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (--webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -88,7 +95,7 @@ input {
   background-color: inherit;
   font-size: 16px;
   line-height: 1.4;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     font-size: 18px;
   }
 }
@@ -141,7 +148,14 @@ a {
   line-height: 1.4;
   color: var(--textColorWhite);
   text-decoration: none;
-  @media screen and (min-width: 768px) {
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    // color: var(--lightGreen);
+  }
+  @media screen and (min-width: $tab) {
     font-size: 18px;
   }
 }
@@ -153,11 +167,12 @@ img {
 h1 {
   font-weight: 600;
   font-size: 40px;
-  line-height: 1.4;
+  line-height: 1.35;
   color: var(--textColorWhite);
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     font-size: 55px;
+    line-height: 1.4;
   }
 }
 
@@ -166,12 +181,9 @@ h2 {
   font-size: 32px;
   line-height: 1.4;
   color: var(--textColorWhite);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     font-size: 40px;
     line-height: 1.35;
-  }
-  @media screen and (min-width: 768px) {
-    line-height: 1.2;
   }
 }
 
@@ -179,9 +191,8 @@ h3 {
   font-size: 16px;
   line-height: 1.4;
   color: var(--textColorWhite);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tab) {
     font-size: 18px;
-    line-height: 1.2;
   }
 }
 
@@ -210,14 +221,14 @@ h4 {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 767.98px) {
+  @media screen and (min-width: $tab) {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  @media screen and (min-width: 1359.98px) {
+  @media screen and (min-width: $desk) {
     max-width: 1360px;
     padding-left: 20px;
     padding-right: 20px;
