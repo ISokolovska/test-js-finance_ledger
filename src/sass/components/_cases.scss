@@ -1,11 +1,12 @@
 .section.cases {
-  background-color: var(--textColorWhite);
+  background-color: var(--bgBlack);
 }
 .container.cases {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--textColorWhite);
 }
 
 .cases__wrapper {
@@ -31,14 +32,18 @@
   width: 100%;
 
   @media screen and (min-width: $tab) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 17px;
   }
 }
 
 .cases__item {
   width: 100%;
+  :hover,
+  :focus {
+    opacity: 0.8;
+  }
   @media screen and (min-width: $tab) {
     flex-basis: calc((100% - 34px) / 3);
   }

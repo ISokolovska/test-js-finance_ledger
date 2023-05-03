@@ -1,25 +1,25 @@
-.header {
+.container.header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   min-width: 320px;
   height: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  @media screen and (min-width: $mob2) {
-    width: 480px;
-  }
+  padding: 25px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   @media screen and (min-width: $tab) {
     flex-direction: row;
     width: 768px;
     height: 70px;
-    padding: '16px 32px';
+    padding: '25px 32px';
   }
   @media screen and (min-width: $desk) {
     width: 1360px;
-    padding: '32px 30px';
+    padding: '40px 28px';
   }
 }
 
@@ -28,6 +28,16 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
+  .scale {
+    transition: 1s;
+  }
+  &:hover,
+  &:focus {
+    color: var(--lightGreen);
+    transform: scale(1.1);
+    text-decoration: none;
+  }
 }
 
 .header__logo .image {
@@ -40,14 +50,6 @@
   font-size: 28px;
   color: var(--accentColorGreen);
   transition: color 250ms var(--timing-function);
-  .scale {
-    transition: 1s;
-  }
-  &:hover,
-  &:focus {
-    color: var(--lightGreen);
-    transform: scale(1.2);
-  }
 }
 
 @media screen and (min-width: $tab) {

@@ -1,9 +1,19 @@
+.section.form {
+  background-color: var(--bgBlack);
+}
+
 .container.form {
   display: flex;
   flex-direction: column;
   padding: 0;
+
+  background-color: var(--textColorWhite);
   @media screen and (min-width: $tab) {
     flex-direction: row;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: $desk) {
+    padding: 0;
   }
 }
 
@@ -127,6 +137,7 @@
 .form__request {
   display: flex;
   flex-direction: column;
+  background-color: var(--bgForm);
 }
 
 .form__request input {

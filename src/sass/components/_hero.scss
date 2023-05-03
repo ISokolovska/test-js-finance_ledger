@@ -1,8 +1,13 @@
+.section.hero {
+  background-color: var(--bgBlack);
+}
 .container.hero {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 413px;
+  background-color: rgba(47, 48, 58, 0.4);
+
   @media screen and (min-width: $tab) {
     height: 954px;
   }
