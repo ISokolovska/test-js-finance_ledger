@@ -1,20 +1,76 @@
 .section.hero {
   background-color: var(--bgBlack);
 }
+
 .container.hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 413px;
+  height: 100vh;
+  background-image: url('/src/images/header/1mobxheader.jpg');
+  border-radius: 0px;
+  background-repeat: no-repeat;
   background-color: rgba(47, 48, 58, 0.4);
-
   @media screen and (min-width: $tab) {
     height: 954px;
+    font-size: 18px;
+    line-height: 1.4;
+    background-image: url('/src/images/header/1tabxheader.jpg');
   }
   @media screen and (min-width: $desk) {
     height: 698px;
+    background-image: url('/src/images/header/1deskheader.jpg');
   }
 }
+
+@media screen and (max-width: $mob2) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .container.hero {
+      background-image: url('/src/images/header/2mobxheader.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: $mob2) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .container.hero {
+      background-image: url('/src/images/header/2mobxheader.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: $tab) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .container.hero {
+      background-image: url('/src/images/header/2tabxheader.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: $desk) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (--webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .container.hero {
+      background-image: url('/src/images/header/2deskheader.jpg');
+    }
+  }
+}
+
 .hero__text {
   margin-top: 16px;
   font-size: 26px;
