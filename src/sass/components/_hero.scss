@@ -6,20 +6,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-image: url('/src/images/header/1mobxheader.jpg');
+  height: 413px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/src/images/header/1mobxheader.jpg");
   border-radius: 0px;
   background-repeat: no-repeat;
-  background-color: rgba(47, 48, 58, 0.4);
+
   @media screen and (min-width: $tab) {
     height: 954px;
     font-size: 18px;
     line-height: 1.4;
-    background-image: url('/src/images/header/1tabxheader.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/src/images/header/1tabxheader.jpg");
   }
   @media screen and (min-width: $desk) {
     height: 698px;
-    background-image: url('/src/images/header/1deskheader.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("/src/images/header/1deskheader.jpg");
   }
 }
 
@@ -30,7 +33,8 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .container.hero {
-      background-image: url('/src/images/header/2mobxheader.jpg');
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("/src/images/header/2mobxheader.jpg");
     }
   }
 }
@@ -42,7 +46,8 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .container.hero {
-      background-image: url('/src/images/header/2mobxheader.jpg');
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("/src/images/header/2mobxheader.jpg");
     }
   }
 }
@@ -54,7 +59,8 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .container.hero {
-      background-image: url('/src/images/header/2tabxheader.jpg');
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("/src/images/header/2tabxheader.jpg");
     }
   }
 }
@@ -66,7 +72,8 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .container.hero {
-      background-image: url('/src/images/header/2deskheader.jpg');
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("/src/images/header/2deskheader.jpg");
     }
   }
 }
@@ -116,7 +123,7 @@
 }
 
 .hero__button span::before {
-  content: url('/src/images/gallery/arrow_right.png');
+  content: url("/src/images/gallery/arrow_right.png");
   width: 9px;
   height: 18px;
   margin-right: 9px;

@@ -54,3 +54,12 @@
     margin-bottom: 8px;
   }
 }
+
+.cases__item img {
+  @media screen and (max-width: $mob2) {
+    width: 280px;
+  }
+  @media screen and (min-width: $tab) {
+    // max-width: 223px;
+  }
+}
