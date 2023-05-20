@@ -20,7 +20,9 @@
   "dependencies": {
     "jquery": "^3.7.0",
     "lightbox2": "^2.11.4",
-    "modern-normalize": "^1.1.0"
+    "lodash.throttle": "^4.1.1",
+    "modern-normalize": "^1.1.0",
+    "smooth-scroll": "^16.1.3"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

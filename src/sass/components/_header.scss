@@ -10,10 +10,6 @@
   min-width: 320px;
   height: 120px;
   padding: 25px;
-  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background: transparent;
-  // opacity: 1;
-  z-index: 100;
   @media screen and (min-width: $tab) {
     flex-direction: row;
     width: 768px;
@@ -24,6 +20,10 @@
     width: 1360px;
     padding: "40px 28px";
   }
+}
+
+.is_scrolled .container.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .header__logo a {
