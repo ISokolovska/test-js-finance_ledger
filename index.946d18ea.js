@@ -1,0 +1,2 @@
+!function(){var e=document.querySelectorAll(".header nav a"),t=!0,r=!1,o=void 0;try{for(var n,l=e[Symbol.iterator]();!(t=(n=l.next()).done);t=!0){n.value.addEventListener("click",a)}}catch(e){r=!0,o=e}finally{try{t||null==l.return||l.return()}finally{if(r)throw o}}function a(e){e.preventDefault();var t=this.getAttribute("href"),r=document.querySelector(t).offsetTop;scroll({top:r,behavior:"smooth"})}}();
+//# sourceMappingURL=index.946d18ea.js.map
