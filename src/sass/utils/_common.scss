@@ -150,24 +150,19 @@ h4 {
   align-items: flex-start;
   margin: 0 auto;
   min-width: 320px;
-  max-width: 1360px;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: $mob2) {
-    max-width: 480px;
-  }
+
   @media screen and (min-width: $tab) {
-    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
   @media screen and (min-width: $desk) {
-    max-width: 1360px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 80px;

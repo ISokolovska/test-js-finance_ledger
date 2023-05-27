@@ -4,25 +4,22 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
   min-width: 320px;
-  height: 120px;
+  margin: 0 auto;
   padding: 25px;
+  z-index: 999;
   @media screen and (min-width: $tab) {
     flex-direction: row;
-    width: 768px;
     height: 70px;
     padding: "25px 32px";
   }
   @media screen and (min-width: $desk) {
-    width: 1360px;
     padding: "40px 28px";
   }
 }
 
 .is_scrolled .container.header {
+  // width: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
